@@ -7,4 +7,5 @@ before_script:
   - export PATH=/tmp/flutter/bin:$PATH
 script:
   - sed -i .orig "s/path:.*packages\/flutter/path:\ \/tmp\/flutter/" pubspec.yaml
+  - pub get
   - flutter build ios --simulator --verbose
