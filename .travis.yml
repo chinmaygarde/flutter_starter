@@ -3,7 +3,7 @@ os:
 osx_image: xcode7.2
 sudo: false
 before_script:
-  - git clone https://github.com/flutter/flutter.git /tmp/flutter
+  - git clone https://github.com/chinmaygarde/flutter.git /tmp/flutter
   - export PATH=/tmp/flutter/bin:$PATH
 script:
   - flutter build ios --simulator
