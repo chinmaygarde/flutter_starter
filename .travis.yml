@@ -6,6 +6,7 @@ before_script:
   - git clone https://github.com/chinmaygarde/flutter.git /tmp/flutter
   - export PATH=/tmp/flutter/bin:$PATH
   - brew install android-sdk
+  - export ANDROID_HOME=/usr/local/opt/android-sdk
 script:
   - sed -i .orig "s/path:.*packages\/flutter/path:\ \/tmp\/flutter\/packages\/flutter/" pubspec.yaml
   - flutter build ios --simulator --verbose
